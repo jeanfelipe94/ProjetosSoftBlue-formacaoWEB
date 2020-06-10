@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+
+        document.write("Hello World!");
+        document.write("<br>");
+
+        var alfa = "Jean";
+        var beta = "Felipe";
+        var gama = alfa + " " + beta;
+        document.write(gama);
+        document.write("<br>");
+
+        var x = 10;
+        var y = 23.79;
+        var z = x + y;
+        document.write(z);
+        document.write("<br>");
+
+        var resultado = x + y - 5 * (1+1);
+        document.write(resultado);
+        document.write("<br>");
+
+        var resultado = 1 + 2 + 3 + x + x;
+        document.write(resultado);
+        document.write("<br>");
+
+        x = 8;
+
+        if(x % 2 == 0)
+        {
+            document.write("O valor é par!");
+            document.write("<br>");
+        }
+        else
+        {
+            document.write("O valor é ímpar!");
+            document.write("<br>");
+        }
+
+        resultado = true;
+        document.write(resultado);
+        document.write("<br>");
+        
+        resultado = false;
+        document.write(resultado);
+        document.write("<br>");
+
+        var lista = new Array("Ferrari", "McLaren", "Red Bull Racing Team");
+        document.write(lista[0]);
+        document.write("<br>");
+        document.write(lista[1]);
+        document.write("<br>");
+        document.write(lista[2]);
+        document.write("<br>");
+
+        var texto = "JavaScript é na SoftBlue!";
+        var TamanhoDoTexto = texto.length;
+        document.write("O tamanho do texto é de " + TamanhoDoTexto + " caracteres");
+        document.write("<br>");
+
+        var posicao = texto.indexOf("SoftBlue");
+        document.write(posicao);
+        document.write("<br>");
+
+        document.write("Ocorrências de 'a':");
+        document.write("<br>");
+        posicao = texto.indexOf("a");
+        while(posicao != -1)
+        {
+            document.write("Posição: " + posicao + "<br>");
+            posicao = texto.indexOf("a",posicao + 1);
+        }
+
+        var textoParcial = texto.substring(1,14);
+        document.write(textoParcial + "<br>");
+
+        var texto = "Jean Felipe";
+        texto = texto.replace("Felipe","LunaBot");
+        document.write(texto + "<br>");
+
+    </script>    
+</body>
+
+</html>

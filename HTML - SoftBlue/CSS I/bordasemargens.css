@@ -1,0 +1,22 @@
+.BordaA
+{
+     border: 3px solid #ff0000; /* Borda sólida com 5 pixels de espessura na cor vermelha */
+    /*border: 5px dotted #ff0000; /* Borda pontilhada com 5 pixels de espessura na cor vermelha */
+    /*border: 3px dashed #ff0000 /* Borda tracejada com 5 pixels de espessura na cor vermelha */
+    border-radius: 8px; /* Arredondar as bordas */
+}
+
+.BordaB
+{
+    border-width: 5px; /* Espessura de 5pixels */
+    border-style: inset; /* Efeito 3D */
+    border-color: #ff0000; /* Cor da borda */
+    width: 50%; /* posicionamento da borda na tela */
+}
+
+.BordaMisturada
+{
+    width: 400px;
+    height: 100px;
+    border-style: solid dashed double dotted; /* No sentido horário (solid - superior, dashed - direita, double - inferior e dotted - esquerda) */
+}

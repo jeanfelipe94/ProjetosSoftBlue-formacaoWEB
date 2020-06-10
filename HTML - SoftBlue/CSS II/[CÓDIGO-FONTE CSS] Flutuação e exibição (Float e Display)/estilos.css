@@ -1,0 +1,45 @@
+div#painelA
+{
+    width: 600px;
+    height: 500px;
+    background-color: #ffdddd;
+}
+
+.flutuarEsquerda
+{
+    float: left;
+    margin-right: 15px;
+}
+
+.flutuarDireita
+{
+    float: right;
+    margin-left: 15px;
+}
+
+div#painelB
+{
+    width: 600px;
+    height: 500px;
+    background-color: #ddddff;
+    
+    position: absolute;
+    left: 630px;
+    top: 15px;
+}
+
+.estiloExibicao
+{
+    display: initial; /* inline, block, none */
+}
+
+
+
+
+
+
+
+
+
+
+

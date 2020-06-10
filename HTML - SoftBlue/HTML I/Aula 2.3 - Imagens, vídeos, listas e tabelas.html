@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Imagens, vídeos, listas e tabelas</title>
+  </head>
+    <!-- Fim do head -->
+  <body>
+    <h1>Imagens</h1> <!-- Título de algumas imagens -->
+    <img src="Arquivos_Aula_2.3\ImagemEnfeite.jpg" alt="Prateleira de Livros">
+
+    <figure>
+      <a href="http://www.youtube.com/user/softbluecursos"><img src="Arquivos_Aula_2.3\sbv2_brasilMap.png"></a>
+      <figcaption>SoftBlue: de Curitiba para todo o Brasil</figcaption>
+    </figure>
+
+    <h1>Videos</h1>
+    <!-- width = largura / height = Altura -->
+    <video width="320" height="180" controls>
+      <source src="Arquivos_Aula_2.3\SeuVideo.mp4" type="video/mp4">
+    </video>
+
+    <h1>Listas</h1>
+
+    <ul> <!-- Marcação para listas não ordenadas. -->
+      <li>HTML</li>
+      <ul>
+        <li>MARCAÇÕES</li>
+        <li>CRIAÇÕES DE LINKS</li>
+      </ul>
+      <li>CSS</li>
+      <li>JAVASCRIPT</li>
+      <li>AJAX</li>
+    </ul>
+
+    <ol> <!-- Marcação para listas ordenadas. -->
+      <li>McLaren</li>
+      <li>Ferrari</li>
+      <li>Red Bull Racing Team</li>
+    </ol>
+
+    <table border = 1> <!-- Tabelas -->
+      <caption>Relatório dos pilotos da Fórmula 1</caption>
+      <tr> <!-- Linha da Tabela -->
+        <th>Nome do Piloto |</th> <!-- Coluna com destaque -->
+        <th>| Pontuação do Piloto |</th>
+        <th>| Ativo |</th>
+        <th>| Equipe |</th>
+      </tr>
+
+      <tr>
+        <td>Lewis Hamilton</td>
+        <td>40</td>
+        <td rowspan="4">Sim</td>
+        <td rowspan="2">Mercedes</td>
+      </tr>
+
+      <tr>
+        <td>Nico Rosberg</td>
+        <td>45</td>
+        <!--<td>Sim</td>-->
+        <!--<td>Mercedes</td>-->
+      </tr>
+
+      <tr>
+        <td>Felipe</td>
+        <td>46</td>
+        <!--<td>Sim</td>-->
+        <td rowspan="2">Ferrari</td>
+      </tr>
+
+      <tr>
+        <td>Vettel</td>
+        <td>40</td>
+        <!--<td>Sim</td>-->
+        <!--<td>Ferrari</td>-->
+      </tr>
+    </table>
+
+
+
+  </body>
+</html>

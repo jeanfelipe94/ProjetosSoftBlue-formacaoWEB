@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Formulários e seus componentes</title>
+  </head>
+
+  <body>
+    <form action="" method="post">
+
+      <label>Nome: </label>
+      <input type="text" name="CampoNome" placeholder="Insira aqui o seu nome..." value="">
+      <br>
+
+      <label>Idade: </label>
+      <input type="number" name="CampoIdade" min="0" max="120" placeholder="Insira aqui a sua idade..." value="">
+      <br>
+
+      <label>Sexo: </label>
+      <input type="radio" name="CampoSexo" value="M"> Masculino
+      <input type="radio" name="CampoSexo" value="F"> Feminino
+      <br>
+
+      <label>Interesses: </label>
+      <br>
+      <input type="checkbox" name="CampoAutomovel" value=""> Automóveis
+      <br>
+      <input type="checkbox" name="CampoBarco" value=""> Barcos
+      <br>
+      <input type="checkbox" name="CampoAviao" value=""> Aviões
+      <br>
+
+      <label>Estado civil: </label>
+      <select name="CampoEstadoCivil">
+        <option>Solteiro(a)</option>
+        <option>Casado(a)</option>
+        <option>Divorciado(a)</option>
+      </select>
+      <br>
+
+      <input type="reset" name="BotaoLimpar" value="Limpar os Dados">
+      <input type="submit" name="BotaoEnviar" value="Enviar os Dados">
+
+    </form>
+  </body>
+
+</html>

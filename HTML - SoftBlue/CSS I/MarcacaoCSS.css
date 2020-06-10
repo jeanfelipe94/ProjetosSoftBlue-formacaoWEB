@@ -1,0 +1,32 @@
+.ParagrafoGrandeVermelho
+{
+    font-size: 30px;
+    color: #ff0000;
+    font-style: normal;
+}
+
+.fundovermelho
+{
+    background-color: #ff0000;
+}
+
+.corbranca
+{
+    color: #ffffff;
+}
+
+p
+{
+    font-style: italic;
+}
+
+p#rodape
+{
+    font-size: 14px;
+    background-color: #ffdddd;
+}
+
+#rodape
+{
+    background-color: red;
+}

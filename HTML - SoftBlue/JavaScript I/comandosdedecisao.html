@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+
+        var a = true;
+        var b = !a;
+        document.write("a: "+ a +"<br>");
+        document.write("b: "+ b +"<br>");
+
+        var resultado = true && false;
+        document.write("Resultado: "+ resultado +"<br>");
+
+        var resultado = true || false;
+        document.write("Resultado: "+ resultado +"<br>"); 
+
+        var horario = 41;
+
+        if (horario >= 0 && horario <= 12)
+        {
+            document.write("Bom dia! <br>");
+        }
+        else if (horario > 12 && horario <= 18)
+        {
+            document.write("Boa tarde! <br>");
+        }
+        else if (horario > 18 && horario <= 23)
+        {
+            document.write("Boa noite! <br>");
+        }
+        else
+        {
+            document.write("Horário inválido! <br>");
+        } 
+
+        var alfa = 4;
+
+        switch(alfa)
+        {
+            case 4:
+                document.write("Quatro <br>");
+                break;
+
+            case 5:
+                document.write("Cinco <br>");
+                break;
+                
+            case 6:
+                document.write("Seis <br>");
+                break;
+        }   
+
+    </script>
+</body>
+</html>

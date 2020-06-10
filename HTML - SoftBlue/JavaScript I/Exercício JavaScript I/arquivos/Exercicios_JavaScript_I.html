@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript</title>
+    </head>
+    <body>
+        <script>
+
+            /***************
+            * Exercício 01 *
+            ***************/
+            document.write("Exercício 01: ");
+            
+            for(x=1; x<=100; x++) 
+            {
+            	document.write(x + " ");
+            }
+            
+            document.write("<br><br>");
+            
+            /***************
+            * Exercício 02 *
+            ***************/
+            document.write("Exercício 02: ");
+            
+            for(x=1; x<=100; x++) {
+            	if(x % 3 == 0) {
+            		document.write(x + " ");
+            	}
+            }
+            
+            document.write("<br><br>");
+            
+            /***************
+            * Exercício 03 *
+            ***************/
+            document.write("Exercício 03: ");
+            
+            resultado = 0;
+            for(x=50; x<=100; x = x + 2) {
+            	resultado += x;
+            }
+            document.write(resultado);
+            
+            document.write("<br><br>");
+            
+            /***************
+            * Exercício 04 *
+            ***************/
+            document.write("Exercício 04: ");
+            
+            /*
+            * Esta solução utiliza um recurso chamado 'recursão' onde uma função
+            * invoca ela mesma dentro de seu bloco de código. A idéia neste algoritmo
+            * é ir chamando recursivamente a mesma função até atingir o valor 1,
+            * pois fatorial de 1 retorna 1 mesmo, e a partir deste retorno ir somando
+            * com os demais retornos das invocações anteriores.
+            */
+            
+            function fatorial(numero) {
+            	if(numero == 1)
+            		return 1;
+            	else
+            		return numero * fatorial(numero - 1);
+            }
+            
+            document.write(fatorial(4));
+            
+            document.write("<br><br>");
+            
+            /***************
+            * Exercício 05 *
+            ***************/
+            document.write("Exercício 05: ");
+            
+            function calculaMedia(nota1, nota2, nota3, peso1, peso2, peso3) {
+            	resultado = ((nota1 / 10) * peso1) + ((nota2 / 10) * peso2) +((nota3 / 10) * peso3);
+            	return resultado;
+            }
+            
+            document.write(calculaMedia(10, 9, 8, 3, 2, 5));
+            
+            document.write("<br><br>");
+            
+            /***************
+            * Exercício 06 *
+            ***************/
+            document.write("Exercício 06: ");
+            
+            /*
+            * Para implementar a fórmula de fibonacci novamente foi utilizado o recurso
+            * de 'recursão' na construção da função em questão.
+            */
+            
+            function fibonacci(i) {
+            	if(i < 2) {
+            		return i;
+            	}
+            
+            	else {
+            		return fibonacci(i-1) + fibonacci(i-2);
+            	}
+            }
+            
+            for(i=1; i<=10; i++) {
+                document.write(fibonacci(i) + " ");
+            }
+            
+            document.write("<br><br>");
+
+            /***************
+            * Exercício 07 *
+            ***************/
+            document.write("Exercício 07: ");
+            
+            function somaDeIntervalo(x, y) {
+            	resultado = 0;
+            	for(i=x; i<=y; i++) {
+            		resultado += i;
+            	}
+            	return resultado;
+            }
+            
+            document.write(somaDeIntervalo(5, 10));
+            
+            document.write("<br><br>");
+
+            /****************
+            * Exercício 08  *
+            * Utilizando if *
+            ****************/
+            document.write("Exercício 08 (usando if): ");
+            
+            function minhaFuncaoIf(x) {
+            
+            	if(x % 2 == 0) {
+            		y = x / 2;
+            	}
+            	else {
+            		y = 3 * x + 1;
+            	}
+            
+            	document.write(y + " ");
+            
+            	if(y != 1)
+            		minhaFuncaoIf(y);
+            }
+            
+            minhaFuncaoIf(13);
+            
+            document.write("<br><br>");
+            
+            
+            
+            /********************
+            * Exercício 08      *
+            * Utilizando switch *
+            ********************/
+            document.write("Exercício 08 (usando switch): ");
+            
+            function minhaFuncaoSwitch(x) {
+            
+            	switch(x % 2) {
+            		case 0:
+            			y = x / 2;
+            			break;
+            		default:
+            			y = 3 * x + 1;
+            			break;
+            	}
+            
+            	document.write(y + " ");
+            
+            	if(y != 1)
+            		minhaFuncaoSwitch(y);
+            }
+            
+            minhaFuncaoSwitch(13);
+
+        </script>
+    </body>
+</html>
+
+
+
